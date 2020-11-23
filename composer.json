@@ -37,7 +37,10 @@
         "laravel": {
             "providers": [
               "PackageServiceProvider"
-            ]
+            ],
+            "aliases": {
+                "Package": "Miladimos\\Package\\Facades\\PackageFacade"
+            }
         }
     },
     "license": "MIT",
