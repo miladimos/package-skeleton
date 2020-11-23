@@ -4,6 +4,23 @@
 
 - [English](README-en.md)
 
-### برای نصب در مسیر روت پروژه خود دستور زیر را در ریشه پروژه اجرا کنید 
+# پکیج لاراولی 
+  یه پکیج خفن
 
-``composer require miladimos/laravel-``
+
+### نصب 
+
+1.  برای نصب در مسیر روت پروژه خود دستور زیر را در ریشه پروژه اجرا کنید 
+```
+composer require miladimos/laravel-
+```
+
+2. Open your config/app.php and add the following to the providers array:
+```php
+Miladimos\Package\Providers\PackageServiceProvider::class,
+```
+
+3. Run the command below to publish the package config file config/package.php:
+```
+php artisan vendor:publish
+```
