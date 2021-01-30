@@ -13,9 +13,9 @@ class CreateTableTable extends Migration
      */
     public function up()
     {
-        Schema::create('table', function (Blueprint $table) {
+        Schema::create('tables', function (Blueprint $table) {
             $table->id();
-            $table->boolean('active')->default(1);
+            $table->string('title');
             $table->timestamps();
         });
     }

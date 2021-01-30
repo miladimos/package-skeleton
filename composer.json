@@ -1,19 +1,15 @@
 {
-    "name": "miladimos/laravel-package",
+    "name": "miladimos/package-skeleton",
     "description": "test description",
-    "homepage": "https://github.com/miladimos/laravel-package",
+    "homepage": "https://github.com/miladimos/package-skeleton",
     "type": "library",
     "keywords": [
         "laravel",
         "laravel-package",
-        "laravel-social",
         "laravel support",
         "lumen packages",
         "laravel packages",
-        "lumen support",
-        "like",
-        "subscribe",
-        "bookmark"
+        "lumen support"
     ],
     "authors": [
         {
