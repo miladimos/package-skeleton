@@ -1,6 +1,5 @@
 <?php
 
-
 namespace Miladimos\Package\Facades;
 
 use Illuminate\Support\Facades\Facade;

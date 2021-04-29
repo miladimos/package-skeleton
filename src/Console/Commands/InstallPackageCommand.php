@@ -1,8 +1,6 @@
 <?php
 
-
 namespace Miladimos\Package\Console\Commands;
-
 
 use Illuminate\Console\Command;
 
@@ -92,5 +90,4 @@ class InstallPackageCommand extends Command
     //         '--force'    => true
     //     ]);
     // }
-
 }
