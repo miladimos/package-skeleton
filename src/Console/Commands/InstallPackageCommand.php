@@ -15,6 +15,18 @@ class InstallPackageCommand extends Command
         $this->line("\t... Welcome To Package Installer ...");
 
 
+        // if (!empty(File::glob(database_path('migrations\*_create_packages_tables.php')))) {
+
+        //     $list  = File::glob(database_path('migrations\*_create_packages_tables.php'));
+        //     collect($list)->each(function ($item) {
+        //         File::delete($item);
+        //     });
+
+        //     $this->publishMigration();
+        // } else {
+        //     $this->publishMigration();
+        // }
+
         $this->info("Package Successfully Installed.\n");
         $this->info("\t\tGood Luck.");
     }
