@@ -3,6 +3,7 @@
     "description": "test description",
     "homepage": "https://github.com/miladimos/package-skeleton",
     "type": "library",
+    "version": "0.1.0",
     "keywords": [
         "laravel",
         "laravel-package",
@@ -22,7 +23,10 @@
     "autoload": {
         "psr-4": {
             "Miladimos\\Package\\": "src/"
-        }
+        },
+        "files": [
+            "./src/helpers.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {

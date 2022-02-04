@@ -127,11 +127,11 @@ class PackageServiceProvider extends ServiceProvider
     // protected function registerBladeDirectives()
     // {
     //     Blade::directive('format', function ($expression) {
-    //         return "<?php echo ($expression)->format('m/d/Y H:i'); ?>";
+            // return "<?php echo ($expression)->format('m/d/Y H:i') ?/>";
     //     });
 
     //     Blade::directive('config', function ($key) {
-    //         return "<?php echo config('dashboarder.' . $key); ?>";
+    //         return "<?php echo config('dashboarder.' . $key); ?/>";
     //     });
     // }
 
