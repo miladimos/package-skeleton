@@ -27,6 +27,17 @@ class InstallPackageCommand extends Command
         //     $this->publishMigration();
         // }
 
+        // if (!empty(File::glob(database_path('migrations\*_create_package_table.php')))) {
+        //     $list  = File::glob(database_path('migrations\*_create_package_table.php'));
+        //     collect($list)->each(function ($item) {
+        //         File::delete($item);
+        //         $this->warn("Deleted: " . $item);
+        //     });
+        //     $this->publishMigration();
+        // } else {
+        //     $this->publishMigration();
+        // }
+
         $this->info("Package Successfully Installed.\n");
         $this->info("\t\tGood Luck.");
     }
