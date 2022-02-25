@@ -1,6 +1,6 @@
 <?php
 
-namespace Miladimos\Package\Models;
+namespace Vendor\Package\Models;
 
 use Illuminate\Database\Eloquent\Model;
 

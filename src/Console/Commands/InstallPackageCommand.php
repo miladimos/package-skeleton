@@ -1,6 +1,6 @@
 <?php
 
-namespace Miladimos\Package\Console\Commands;
+namespace Vendor\Package\Console\Commands;
 
 use Illuminate\Console\Command;
 
@@ -90,8 +90,8 @@ class InstallPackageCommand extends Command
     // private function publishConfig()
     // {
     //     $this->call('vendor:publish', [
-    //         '--provider' => "Miladimos\package\Providers\packageServiceProvider",
-    //         '--tag'      => 'config',
+    //         '--provider' => "Vendor\\Package\\Providers\\packageServiceProvider",
+    //         '--tag'      => 'package-config',
     //         '--force'    => true
     //     ]);
     // }
@@ -99,8 +99,8 @@ class InstallPackageCommand extends Command
     // private function publishMigration()
     // {
     //     $this->call('vendor:publish', [
-    //         '--provider' => "Miladimos\package\Providers\packageServiceProvider",
-    //         '--tag'      => 'migrations',
+    //         '--provider' => "Vendor\\Package\\Providers\\packageServiceProvider",
+    //         '--tag'      => 'package-migrations',
     //         '--force'    => true
     //     ]);
     // }
@@ -108,8 +108,8 @@ class InstallPackageCommand extends Command
     // private function publishAssets()
     // {
     //     $this->call('vendor:publish', [
-    //         '--provider' => "Miladimos\package\Providers\packageServiceProvider",
-    //         '--tag'      => 'assets',
+    //         '--provider' => "Vendor\\Package\\Providers\\packageServiceProvider",
+    //         '--tag'      => 'package-assets',
     //         '--force'    => true
     //     ]);
     // }

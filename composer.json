@@ -22,7 +22,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Miladimos\\Package\\": "src/"
+            "Vendor\\Package\\": "src/"
         },
         "files": [
             "./src/helpers.php"
@@ -30,16 +30,16 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Miladimos\\Package\\Tests\\": "tests"
+            "Vendor\\Package\\Tests\\": "tests"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Miladimos\\Package\\Providers\\PackageServiceProvider"
+                "Vendor\\Package\\Providers\\PackageServiceProvider"
             ],
             "aliases": {
-                "Package": "Miladimos\\Package\\Facades\\PackageFacade"
+                "Package": "Vendor\\Package\\Facades\\PackageFacade"
             }
         }
     },

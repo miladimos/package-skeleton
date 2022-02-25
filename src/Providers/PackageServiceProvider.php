@@ -1,6 +1,6 @@
 <?php
 
-namespace Miladimos\Package\Providers;
+namespace Vendor\Package\Providers;
 
 use App\Http\Kernel;
 use Illuminate\Routing\Router;
@@ -8,8 +8,8 @@ use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
-use Miladimos\Package\Facades\PackageFacade;
-use Miladimos\Package\Console\Commands\InstallPackageCommand;
+use Vendor\Package\Facades\PackageFacade;
+use Vendor\Package\Console\Commands\InstallPackageCommand;
 
 class PackageServiceProvider extends ServiceProvider
 {
