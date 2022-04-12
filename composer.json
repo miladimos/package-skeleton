@@ -16,7 +16,7 @@
         {
             "name": "miladimos",
             "email": "miladimos@outlook.com",
-            "role": "maintaner",
+            "role": "maintainer",
             "homepage": "https://github.com/miladimos"
         }
     ],
@@ -39,7 +39,7 @@
                 "Vendor\\Package\\Providers\\PackageServiceProvider"
             ],
             "aliases": {
-                "Package": "Vendor\\Package\\Facades\\PackageFacade"
+                "Package": "Vendor\\Package\\Facades\\Package"
             }
         }
     },

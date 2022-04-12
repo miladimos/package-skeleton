@@ -90,7 +90,7 @@ class InstallPackageCommand extends Command
     // private function publishConfig()
     // {
     //     $this->call('vendor:publish', [
-    //         '--provider' => "Vendor\\Package\\Providers\\packageServiceProvider",
+    //         '--provider' => "Vendor\\Package\\Providers\\PackageServiceProvider",
     //         '--tag'      => 'package-config',
     //         '--force'    => true
     //     ]);
@@ -99,7 +99,7 @@ class InstallPackageCommand extends Command
     // private function publishMigration()
     // {
     //     $this->call('vendor:publish', [
-    //         '--provider' => "Vendor\\Package\\Providers\\packageServiceProvider",
+    //         '--provider' => "Vendor\\Package\\Providers\\PackageServiceProvider",
     //         '--tag'      => 'package-migrations',
     //         '--force'    => true
     //     ]);
@@ -108,7 +108,7 @@ class InstallPackageCommand extends Command
     // private function publishAssets()
     // {
     //     $this->call('vendor:publish', [
-    //         '--provider' => "Vendor\\Package\\Providers\\packageServiceProvider",
+    //         '--provider' => "Vendor\\Package\\Providers\\PackageServiceProvider",
     //         '--tag'      => 'package-assets',
     //         '--force'    => true
     //     ]);

@@ -8,15 +8,15 @@ use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
-use Vendor\Package\Facades\PackageFacade;
 use Vendor\Package\Console\Commands\InstallPackageCommand;
+use Vendor\Package\Facades\Package;
 
 class PackageServiceProvider extends ServiceProvider
 {
 
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__ . "/../../config/config.php", 'package');
+        $this->mergeConfigFrom(__DIR__ . "/../../config/package.php", 'package');
 
         // $this->loadMigrationsFrom(__DIR__ . '/../../database/migrations');
 
@@ -45,7 +45,7 @@ class PackageServiceProvider extends ServiceProvider
     private function registerFacades()
     {
         $this->app->bind('package', function ($app) {
-            return new PackageFacade();
+            return new Package();
         });
     }
 
@@ -79,59 +79,58 @@ class PackageServiceProvider extends ServiceProvider
     // private function registerAssets()
     // {
     //     $this->publishes([
-    //         __DIR__ . '/../../resources/statics' => public_path('dashboarder'),
-    //     ], 'dashboarder-assets');
+    //         __DIR__ . '/../../resources/statics' => public_path('package'),
+    //     ], 'package-assets');
     // }
 
     // private function publishStubs()
     // {
     //     $this->publishes([
-    //         __DIR__ . '/../Console/Stubs' => resource_path('vendor/laravelir/dashboarder/stubs'),
-    //     ], 'dashboarder-stubs');
+    //         __DIR__ . '/../Console/Stubs' => resource_path('vendor/laravelir/package/stubs'),
+    //     ], 'package-stubs');
     // }
 
+    // public function registerTranslations()
+    // {
+    //     $this->loadTranslationsFrom(__DIR__ . '/../../resources/lang', 'package');
 
-
-    public function registerTranslations()
-    {
-        $this->loadTranslationsFrom(__DIR__ . '/../../resources/lang', 'dashboarder');
-
-        $this->publishes([
-            __DIR__ . '/../../resources/lang' => resource_path('lang/laravelir/dashboarder'),
-        ], 'dashboarder-langs');
-    }
+    //     $this->publishes([
+    //         __DIR__ . '/../../resources/lang' => resource_path('lang/laravelir/package'),
+    //     ], 'package-langs');
+    // }
 
     // private function registerRoutes()
     // {
     //     Route::group($this->routeConfiguration(), function () {
-    //         $this->loadRoutesFrom(__DIR__ . '/../../routes/dashboarder.php', 'dashboarder-routes');
+    //         $this->loadRoutesFrom(__DIR__ . '/../../routes/package.php', 'package-routes');
     //     });
     // }
 
     // private function routeConfiguration()
     // {
     //     return [
-    //         'prefix' => config('dashboarder.routes.prefix'),
-    //         'middleware' => config('dashboarder.routes.middleware'),
-    //         'as' => 'dashboarder.'
+    //         'prefix' => config('package.routes.prefix'),
+    //         'middleware' => config('package.routes.middleware'),
+    //         'as' => 'package.'
     //     ];
     // }
 
     // protected function publishMigrations()
     // {
+    // $timestamp = date('Y_m_d_His', time());
     //     $this->publishes([
-    //         __DIR__ . '/../database/migrations/create_dashboarder_tables.stub' => database_path() . "/migrations/{$timestamp}_create_dashboarder_tables.php",
-    //     ], 'dashboarder-migrations');
+    //         __DIR__ . '/../database/migrations/package_tables.stub' => database_path() . "/migrations/{$timestamp}package_tables.php",
+    //     ], 'package-migrations');
     // }
 
     // protected function registerBladeDirectives()
     // {
     //     Blade::directive('format', function ($expression) {
-            // return "<?php echo ($expression)->format('m/d/Y H:i') ?/>";
+    // return "<?php echo ($expression)->format('m/d/Y H:i') ?/>";
     //     });
 
     //     Blade::directive('config', function ($key) {
-    //         return "<?php echo config('dashboarder.' . $key); ?/>";
+    //         return "<?php echo config('package.' . $key); ?/>";
     //     });
     // }
 
@@ -150,6 +149,6 @@ class PackageServiceProvider extends ServiceProvider
 
     // public function registerLivewireComponents()
     // {
-    //     // Livewire::component('test', Test::class);
+    // Livewire::component('test', Test::class);
     // }
 }

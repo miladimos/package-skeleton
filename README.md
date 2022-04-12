@@ -1,9 +1,9 @@
 - [![Starts](https://img.shields.io/github/stars/miladimos/package-skeleton?style=flat&logo=github)](https://github.com/miladimos/package-skeleton/forks)
 - [![Forks](https://img.shields.io/github/forks/miladimos/package-skeleton?style=flat&logo=github)](https://github.com/miladimos/package-skeleton/stargazers)
-  [![Total Downloads](https://img.shields.io/packagist/dt/miladimos/laravel-.svg?style=flat-square)](https://packagist.org/packages/miladimos/laravel-)
+  [![Total Downloads](https://img.shields.io/packagist/dt/miladimos/package-skeleton.svg?style=flat-square)](https://packagist.org/packages/miladimos/package-skeleton)
 
 
-# laravel Package
+# vendor/package
 
 A package for fun
 
@@ -21,10 +21,10 @@ composer require vendor/package
 Vendor\Package\Providers\PackageServiceProvider::class,
 ```
 
-3. Run the command below to publish the package config file config/package.php:
+1. Run the command below to install the package:
 
 ```
-php artisan vendor:publish
+php artisan package:install
 ```
 
 
@@ -41,10 +41,6 @@ Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed re
 ## Contributing
 
 Please see [CONTRIBUTING](.github/CONTRIBUTING.md) for details.
-
-## Security Vulnerabilities
-
-Please review [our security policy](../../security/policy) on how to report security vulnerabilities.
 
 ## Credits
 
