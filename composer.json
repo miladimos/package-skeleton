@@ -36,7 +36,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Vendor\\Package\\Providers\\PackageServiceProvider"
+                "Package\\Package\\Providers\\PackageServiceProvider"
             ],
             "aliases": {
                 "Package": "Vendor\\Package\\Facades\\Package"
