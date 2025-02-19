@@ -3,6 +3,7 @@
 namespace Vendor\Package\Console\Commands;
 
 use Illuminate\Console\Command;
+use Illuminate\Support\Facades\File;
 
 class InstallPackageCommand extends Command
 {
@@ -14,17 +15,16 @@ class InstallPackageCommand extends Command
     {
         $this->line("\t... Welcome To Package Installer ...");
 
-
-        // if (!empty(File::glob(database_path('migrations\*_create_packages_tables.php')))) {
-
-        //     $list  = File::glob(database_path('migrations\*_create_packages_tables.php'));
-        //     collect($list)->each(function ($item) {
-        //         File::delete($item);
-        //     });
-
-        //     $this->publishMigration();
+        // if (File::exists(config_path('package.php'))) {
+        //     $confirm = $this->confirm("package.php already exist. Do you want to overwrite?");
+        //     if ($confirm) {
+        //         $this->publishConfig();
+        //     } else {
+        //         $this->error("you must overwrite config file");
+        //         exit;
+        //     }
         // } else {
-        //     $this->publishMigration();
+        //     $this->publishConfig();
         // }
 
         // if (!empty(File::glob(database_path('migrations\*_create_package_table.php')))) {

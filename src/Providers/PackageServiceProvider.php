@@ -14,7 +14,7 @@ use Vendor\Package\Facades\Package;
 class PackageServiceProvider extends ServiceProvider
 {
 
-    public function register()
+    public function register(): void
     {
         $this->mergeConfigFrom(__DIR__ . "/../../config/package.php", 'package');
 
@@ -25,12 +25,7 @@ class PackageServiceProvider extends ServiceProvider
         $this->registerFacades();
     }
 
-    /**
-     * Bootstrap services.
-     *
-     * @return void
-     */
-    public function boot()
+    public function boot(): void
     {
 
         $this->registerCommands();
@@ -149,6 +144,18 @@ class PackageServiceProvider extends ServiceProvider
 
     // public function registerLivewireComponents()
     // {
-    // Livewire::component('test', Test::class);
+    //     Livewire::component('test', Test::class);
+    // }
+
+    // protected function getMigrationFileName(string $migrationFileName): string
+    // {
+    //     $timestamp = date('Y_m_d_His');
+
+    //     $filesystem = $this->app->make(Filesystem::class);
+
+    //     return Collection::make([$this->app->databasePath() . DIRECTORY_SEPARATOR . 'migrations' . DIRECTORY_SEPARATOR])
+    //         ->flatMap(fn ($path) => $filesystem->glob($path . '*_' . $migrationFileName))
+    //         ->push($this->app->databasePath() . "/migrations/{$timestamp}_{$migrationFileName}")
+    //         ->first();
     // }
 }

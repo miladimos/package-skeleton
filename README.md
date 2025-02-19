@@ -18,7 +18,7 @@ composer require vendor/package
 2. Open your config/app.php and add the following to the providers array:
 
 ```php
-Vendor\Package\Providers\CacheableServiceProvider::class,
+Vendor\Package\Providers\PackageServiceProvider::class,
 ```
 
 1. Run the command below to install the package:
